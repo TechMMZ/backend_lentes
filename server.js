@@ -8,7 +8,8 @@ import authRoutes from './routes/authRoutes.js';
 import heroBackgroundRoutes from './routes/heroBackgroundRoutes.js';
 import productosRoutes from './routes/productosRoutes.js';
 import seccionesRoutes from './routes/secciones.js';
-import chatbotRoutes from './routes/chatbotRoutes.js';
+import pagoRoutes from './routes/pagoRoutes.js';
+// import chatbotRoutes from './routes/chatbotRoutes.js';
 
 dotenv.config();
 
@@ -37,6 +38,7 @@ app.use('/api/auth', authRoutes);
 app.use('/api/hero-background', heroBackgroundRoutes);
 app.use('/api/productos', productosRoutes);
 app.use('/api/secciones', seccionesRoutes);
+app.use('/api/pago', pagoRoutes);
 // app.use('/api/chatbot', chatbotRoutes);
 
 // Puerto
